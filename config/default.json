@@ -1,5 +1,8 @@
 {
     "apiKey": "",
     "authDomain": "",
+    "databaseURL": "",
+    "storageBucket": "",
+    "messagingSenderId": "",
     "port": 9091
 }

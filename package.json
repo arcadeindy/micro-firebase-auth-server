@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/insthync/micro-firebase-auth-server#readme",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "config": "^1.25.1",
     "express": "^4.15.2",
     "firebase": "^3.7.2"
