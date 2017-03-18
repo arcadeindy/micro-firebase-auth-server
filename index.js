@@ -67,9 +67,9 @@ app.post("/signInWithGoogle", function(req, res) {
 });
 
 app.post("/signInWithTwitter", function(req, res) {
-    var access_token = req.body.access_token;
+    var token = req.body.token;
     var secret = req.body.secret;
-    var credential = firebase.auth.TwitterAuthProvider.credential(access_token, secret);
+    var credential = firebase.auth.TwitterAuthProvider.credential(token, secret);
     firebase.auth().signInWithCredential(credential).then(result => {
         res.status(200).send(result);
     }).catch(error => handlerError(res, error));
